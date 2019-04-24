@@ -1,0 +1,25 @@
+
+#main-doc{
+  display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 100px 10000px;
+   grid-template-areas:
+     "Nav Main Main Main"
+     ".  Main Main Main"
+     ".  Main Main Main";
+ }
+ 
+ #navbar{
+   
+   grid-area: Nav;
+   
+   left:0;
+   position:fixed;
+   overflow:hidden;
+ }
+ #Main-Wraps{
+   grid-area: Main;
+  
+ }
+ 
+ @media(min-width:100000px){body{display:none;}}
